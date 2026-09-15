@@ -1,17 +1,30 @@
-# Budget-Manager
-Oracle SQL project for personal finance management. Features a relational database schema with complex queries, joins, views, and data analysis.
+# Personal Budget Management System (Oracle SQL & APEX) 💰
 
-# Personal Budget Management System (Oracle SQL) 💰
+A personal finance management system built with Oracle SQL, PL/SQL, and Oracle APEX. It tracks income and expenses across users, combining backend database logic with an APEX web user interface.
 
-## Project Overview
-This project consists of a relational database designed to manage personal finances efficiently. The main goal is to provide a practical tool for tracking and analyzing income and expenses for multiple users.
+> **Note:** Source code and database identifiers (table names, columns) are written in **Romanian** as part of academic project requirements. A translation key is provided below.
 
-**Note:** The source code and database identifiers (table names, columns) are written in **Romanian** as part of the original academic requirements. A translation key is provided below.
+---
 
-## Key Features
-* **Relational Database Structure:** Built on 4 main tables: Users, Categories, Income, and Expenses.
-* **Data Integrity:** Enforced using Primary Keys, Foreign Keys, and CHECK constraints (e.g., ensuring positive amounts).
-* **Complex Reporting:** Includes advanced SQL queries to generate financial insights, such as total expenses per category and monthly balance analysis.
+## 🚀 How to Run the Project
+
+To set up the project properly, execute the files in order:
+
+1. **`01_create_tables.sql`** – Builds the relational table structures.
+2. **`02_constraints_sequences.sql`** – Applies primary keys, foreign keys, constraints, and database triggers.
+3. **`03_insert_data.sql`** – Populates the database with sample data.
+4. **`04_apex_app.sql`** – Import this file into your Oracle APEX workspace via **App Builder > Import**.
+
+---
+
+## ✨ Key Features
+* **Relational Database:** Built on 4 main tables: Users, Categories, Income, and Expenses.
+* **Data Integrity & Automation:** Enforced using PKs, FKs, sequences, CHECK constraints, and PL/SQL triggers.
+* **PL/SQL Business Logic:** Stored procedures, functions, and packages to handle financial computations and validations.
+* **Interactive UI:** Built with Oracle APEX to easily navigate forms, reports, and dashboards.
+* **Complex Reporting:** Advanced SQL queries and views to generate financial insights and monthly balances.
+
+---
 
 ## 📂 Technical Dictionary (Romanian to English)
 To help navigate the code, here are the mappings for the main entities:
@@ -25,13 +38,15 @@ To help navigate the code, here are the mappings for the main entities:
 | **`suma`** | Amount |
 | **`data`** | Date |
 
-## 🛠 Technical Skills Demonstrated
-* **DDL & DML Operations:** Creating tables, sequences, and managing data.
-* **Advanced SQL Querying:**
-    * **Joins:** Retrieving data across multiple tables.
-    * **Aggregate Functions:** `SUM`, `AVG`, `COUNT` combined with `GROUP BY`.
-    * **Set Operators:** Using `MINUS`, `UNION`.
-    * **Performance:** Created Views and Indexes for optimization.
+---
 
-## Database Schema
-![Database Schema](er_diagram.png)
+## 🛠 Technical Skills Used
+* **Database Design & DDL/DML:** Table creation, constraints, sequences, and data manipulation.
+* **PL/SQL Programming:** Stored procedures, functions, packages, database triggers, cursors, and exception handling.
+* **Advanced SQL:** Joins, aggregate functions, set operators, views, and indexes.
+* **Oracle APEX:** App import/deployment, user interface setup, PL/SQL dynamic actions, and form/report integration.
+
+---
+
+## 📊 Database Schema
+![Database Schema](diagram.png)
