@@ -34,7 +34,7 @@ To set up the project properly, execute the files in order:
 
 | Transaction History | Client Monitoring |
 | :---: | :---: |
-| ![Transaction History](App/history.png) | ![Client Monitoring](App/monitoring.png) |
+| ![Transaction History](App/transactions.png) | ![Client Monitoring](App/monitoring.png) |
 
 ### System Administration
 ![System Admin](App/admin.png)
