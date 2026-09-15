@@ -50,4 +50,9 @@ CREATE SEQUENCE seq_venituri START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_cheltuieli START WITH 1 INCREMENT BY 1;
 CREATE SEQUENCE seq_audit_buget START WITH 1 INCREMENT BY 1;
 
+-----------------------------------------------------------------------
 
+ALTER TABLE cheltuieli ADD CONSTRAINT chk_suma_chelt CHECK (suma > 0);
+ALTER TABLE venituri ADD CONSTRAINT chk_suma_venit CHECK (suma > 0);
+ALTER TABLE cheltuieli ADD descriere VARCHAR2(100);
+ALTER TABLE utilizatori ADD buget_lunar_maxim NUMBER(10,2) DEFAULT 3000;
