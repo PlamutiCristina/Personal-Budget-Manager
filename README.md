@@ -26,6 +26,21 @@ To set up the project properly, execute the files in order:
 
 ---
 
+## 📱 Application Screenshots
+
+| Dashboard Overview | Analytics & Trends |
+| :---: | :---: |
+| ![Dashboard Overview](App/dashboard_pie.png) | ![Analytics](App/dashboard_charts.png) |
+
+| Transaction History | Client Monitoring |
+| :---: | :---: |
+| ![Transaction History](App/history.png) | ![Client Monitoring](App/monitoring.png) |
+
+### System Administration
+![System Admin](App/admin.png)
+
+---
+
 ## 📂 Technical Dictionary (Romanian to English)
 To help navigate the code, here are the mappings for the main entities:
 
